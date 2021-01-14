@@ -1,0 +1,237 @@
+:root {
+  --primary: #214aff;
+  --primary-light: #4164ff;
+  --secondary: #e6cf09;
+  --grey: #404346;
+  --dark: #221d1b;
+  --light: #f6f6f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 * {
+  font-weight: 600 !important;
+}
+
+p * {
+  font-weight: 100 !important;
+}
+
+/* redefining color classes */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.bg-light {
+  background-color: var(--light) !important;
+}
+
+/* FOR LARGE AND XL SCREENS */
+@media screen and (min-width: 992px) {
+  /* MAIN CONTENT */
+  html,
+  body,
+  .body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--dark);
+  }
+  [name="main-page"] {
+    margin-top: 10rem;
+  }
+  [name="about_me-page"] [name="my_work-page"],
+  [name="contact_me-page"] {
+  }
+
+  /* NAVBAR STUFF */
+  nav {
+    min-height: 100%;
+    width: 10em;
+    position: fixed;
+    padding: 0 !important;
+    margin: 0;
+  }
+  nav button {
+    box-sizing: border-box;
+    border-style: none;
+    padding: 0.5rem;
+    margin-top: 4rem !important;
+    min-width: fit-content;
+    letter-spacing: 0.25rem;
+  }
+
+  /* LOGO STYLING */
+  .logo-span {
+    font-size: 90pt;
+    font-weight: 800;
+  }
+
+  #logo-K {
+    position: relative;
+    left: 10px;
+  }
+
+  #logo-B {
+    position: relative;
+    right: 10px;
+  }
+
+  /* END LARGER QUERY */
+}
+
+/* FOR MEDIUM SCREENS */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  /* MAIN CONTENT */
+  [name="main-page"] {
+    color: var(--light);
+  }
+  [name="about_me-page"] [name="my_work-page"],
+  [name="contact_me-page"] {
+    color: var(--light);
+  }
+
+  /* NAVBAR STYLING */
+  nav {
+    margin-bottom: 5rem;
+    padding: 0 1rem !important;
+  }
+  nav button {
+    background: var(--secondary);
+    box-sizing: border-box;
+    border-style: none;
+    padding: 0.5rem;
+    min-width: fit-content;
+    letter-spacing: 0.25rem;
+  }
+
+  /* LOGO STYLING */
+  .logo-span {
+    font-size: 40pt;
+    font-weight: 800;
+  }
+
+  #logo-K {
+    position: relative;
+    left: 6px;
+  }
+
+  #logo-B {
+    position: relative;
+    right: 6px;
+  }
+
+  /* END MED/SMALL QUERY */
+}
+
+/* MOBILE SCREEN QUERY */
+@media screen and (max-width: 767px) {
+  /* MAIN CONTENT */
+  [name="main-page"] {
+    color: var(--light);
+    padding: 0 1rem;
+  }
+  [name="about_me-page"] [name="my_work-page"],
+  [name="contact_me-page"] {
+    color: var(--light);
+    padding: 0 1rem;
+  }
+  /* NAVBAR STYLING */
+  nav {
+    margin-bottom: 5rem;
+    padding: 0 1rem !important;
+  }
+  nav ul {
+    position: fixed;
+    right: 1.25rem;
+  }
+  nav button {
+    background: var(--secondary);
+    box-sizing: border-box;
+    border-style: none;
+    padding: 0.5rem;
+    min-width: 100%;
+    letter-spacing: 0.25rem;
+  }
+  nav a {
+    color: var(--dark);
+  }
+  a:hover,
+  a:focus {
+    color: var(--primary);
+  }
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: var(--dark);
+  }
+
+  /* LOGO STYLING */
+  .logo-span {
+    font-size: 30pt;
+    font-weight: 800;
+  }
+
+  #logo-K {
+    position: relative;
+    left: 4px;
+  }
+
+  #logo-B {
+    position: relative;
+    right: 4px;
+  }
+}
+
+/* BUTTON STYLING */
+
+button:focus {
+  outline: none;
+}
+
+/* Font selectors */
+.rubik {
+  font-family: "Rubik Mono One", sans-serif;
+  font-weight: 600;
+}
+
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
+}
+
+.txt-light {
+  color: var(--light);
+}
+
+.txt-primary {
+  color: var(--primary);
+}
+
+.txt-shadow {
+  text-shadow: -0.15rem 0.15rem 20px var(--grey);
+}
+
+/* Classes */
+
+/* all ID's */
+
+/* hide, for dynamics */
+.hide {
+  display: none !important;
+}
