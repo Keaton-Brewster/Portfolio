@@ -56,9 +56,9 @@ p * {
   [name="main-page"] {
     margin-top: 10rem;
   }
-  [name="about_me-page"] [name="my_work-page"],
+  /* [name="about_me-page"] [name="my_work-page"],
   [name="contact_me-page"] {
-  }
+  } */
 
   /* NAVBAR STUFF */
   nav {
