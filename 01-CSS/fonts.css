@@ -89,12 +89,12 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(/01-CSS/01-fonts/01-Montserrat/Montserrat-Black.ttf);
+  src: url(01-CSS/01-fonts/01-Montserrat/Montserrat-Black.ttf);
   font-weight: 900;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(/01-CSS/01-fonts/01-Montserrat/Montserrat-BlackItalic.ttf);
+  src: url(01-CSS/01-fonts/01-Montserrat/Montserrat-BlackItalic.ttf);
   font-weight: 900;
   font-style: italic;
 }
@@ -103,78 +103,78 @@
 /* SOURCE CODE PRO */
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-ExtraLight.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-ExtraLight.ttf);
   font-weight: 200;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-ExtraLightItalic.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-ExtraLightItalic.ttf);
   font-weight: 200;
   font-style: italic;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Light.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Light.ttf);
   font-weight: 300;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-LightItalic.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-LightItalic.ttf);
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Regular.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Italic.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Italic.ttf);
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/01-Montserrat/Montserrat-Medium.ttf);
+  src: url(01-CSS/01-fonts/01-Montserrat/Montserrat-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/01-Montserrat/Montserrat-MediumItalic.ttf);
+  src: url(01-CSS/01-fonts/01-Montserrat/Montserrat-MediumItalic.ttf);
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-SemiBold.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-SemiBold.ttf);
   font-weight: 600;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-SemiBoldItalic.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-SemiBoldItalic.ttf);
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Bold.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-BoldItalic.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-BoldItalic.ttf);
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Black.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-Black.ttf);
   font-weight: 900;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url(/01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-BlackItalic.ttf);
+  src: url(01-CSS/01-fonts/04-Source-Code-Pro/SourceCodePro-BlackItalic.ttf);
   font-weight: 900;
   font-style: italic;
 }
