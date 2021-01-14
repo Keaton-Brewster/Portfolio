@@ -19,6 +19,11 @@ $(document).ready(function () {
         // start by setting up the function that changes 'pages' (everything will still be built on one page, because I like that more.)
         targetName = "[name='" + $(this).attr("name") + "-page']";
 
+        // Nothing will happen if you click the button for the 'page' you are already on. 
+        if (!$(targetName).hasClass('hide')) {
+            return;
+        }
+
         for (let i = 0; i < pages.length; i++) {
             if (!pages[i].hasClass('hide')) {
                 pages[i].fadeOut("slow").addClass("hide");
