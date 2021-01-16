@@ -182,6 +182,42 @@ p * {
     color: var(--dark);
   }
 
+  /* Styling the menu button */
+  .menu-btn {
+    z-index: 3;
+    cursor: pointer;
+    transition: all ease-out;
+  }
+
+  /* Styling the hamburger lines */
+  .menu-btn .btn-line {
+    border-radius: 100px;
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: var(--dark);
+    transition: all .2s ease-out;
+  }
+
+  /* Adding transform to the X */
+  .menu-btn.close {
+    transform: rotate(180deg) translate(0px, 6px);
+  }
+
+  /* Styling the three lines to make it an X */
+  .menu-btn.close .btn-line:nth-child(1) {
+    background-color: var(--dark);
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
   /* LOGO STYLING */
   .logo-span {
     font-size: 30pt;

@@ -5,6 +5,9 @@ $(document).ready(function () {
         contactPage = $("[name='contact_me-page']"),
         pages = [mainPage, aboutmePage, myworkPage, contactPage];
 
+    let showMenu = false;
+
+
 
     $("body").fadeIn(4000).removeClass("hide");
 
@@ -29,8 +32,40 @@ $(document).ready(function () {
                 pages[i].fadeOut("slow").addClass("hide");
             }
         }
-        console.log(targetName)
+        $('.menu-btn').removeClass('close');
+        showMenu = false;
         $(targetName).fadeIn(1500).removeClass("hide");
     });
 
+
+    // Set the initial state of the menu button
+
+    function toggleMenu() {
+        if (!showMenu) {
+            $('.menu-btn').addClass("close");
+            // Reset the menu state 
+            showMenu = true;
+        } else {
+            $('.menu-btn').removeClass("close");
+            // Reset the menu state 
+            showMenu = false;
+        }
+    }
+
+    $('.menu-btn').on("click", toggleMenu);
+    $(document).on('click', function(event){
+        console.log(event.target);
+        click = event.target;
+
+        if (!$(event.target).hasClass('btn-line') && showMenu === true) {
+            toggleMenu();
+        }
+    })
+
+
+    $('.nav-item .dropdown').hover(function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+      }, function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+      });
 });
