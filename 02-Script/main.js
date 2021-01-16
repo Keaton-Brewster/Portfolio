@@ -38,10 +38,14 @@ $(document).ready(function () {
     });
 
 
+
+
+    // NEED TO CHANGE THIS AROUND A LITTLE BIT. THE CSS AND HTML SEEM GOOD, BUT ON PAGE LOAD, IT DOES NOT QUITE WORK RIGHT. 
+
     // Set the initial state of the menu button
 
     function toggleMenu() {
-        if (!showMenu) {
+        if (!showMenu && $('#navbarDropdown').attr('aria-expanded', 'false')) {
             $('.menu-btn').addClass("close");
             // Reset the menu state 
             showMenu = true;
@@ -62,10 +66,4 @@ $(document).ready(function () {
         }
     })
 
-
-    $('.nav-item .dropdown').hover(function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
-      }, function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
-      });
 });
