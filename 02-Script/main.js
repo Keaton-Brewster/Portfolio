@@ -56,7 +56,7 @@ $(document).ready(function () {
         }
     }
 
-    $('.menu-btn').on("click", toggleMenu);
+    $('.dropdown').on("click", toggleMenu);
     $(document).on('click', function(event){
         console.log(event.target);
         click = event.target;
