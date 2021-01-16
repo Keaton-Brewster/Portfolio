@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 
 
-    $("body").fadeIn(4000).removeClass("hide");
+    $("body").fadeIn(3500).removeClass("hide");
 
     $("body").on("click", "button", function (event) {
         event.preventDefault();
