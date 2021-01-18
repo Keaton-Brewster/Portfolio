@@ -260,7 +260,7 @@ button:focus {
 }
 
 .txt-shadow {
-  text-shadow: -0.15rem 0.15rem 20px var(--grey);
+  text-shadow: 0rem 0rem 5px var(--primary-light);
 }
 
 /* Classes */

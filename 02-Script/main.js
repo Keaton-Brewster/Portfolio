@@ -40,12 +40,20 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
     // NEED TO CHANGE THIS AROUND A LITTLE BIT. THE CSS AND HTML SEEM GOOD, BUT ON PAGE LOAD, IT DOES NOT QUITE WORK RIGHT. 
 
     // Set the initial state of the menu button
 
     function toggleMenu() {
-        if (!showMenu && $('#navbarDropdown').attr('aria-expanded', 'false')) {
+        if (!showMenu && $('#navbarDropdown').attr('aria-expanded','false')) {
             $('.menu-btn').addClass("close");
             // Reset the menu state 
             showMenu = true;
@@ -56,12 +64,12 @@ $(document).ready(function () {
         }
     }
 
-    $('.dropdown').on("click", toggleMenu);
+    $('.menu-btn').on("click", toggleMenu);
+    
     $(document).on('click', function(event){
-        console.log(event.target);
         click = event.target;
 
-        if (!$(event.target).hasClass('btn-line') && showMenu === true) {
+        if (!$(event.target).hasClass('menu-btn') && showMenu === true) {
             toggleMenu();
         }
     })
