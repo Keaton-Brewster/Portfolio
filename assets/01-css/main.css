@@ -55,10 +55,12 @@ p * {
   }
   [name="main-page"] {
     margin-top: 10rem;
+    padding-right: 15em;
   }
-  /* [name="about_me-page"] [name="my_work-page"],
+  [name="about_me-page"], [name="my_work-page"],
   [name="contact_me-page"] {
-  } */
+    padding-right: 15em;
+  }
 
   /* NAVBAR STUFF */
   nav {
