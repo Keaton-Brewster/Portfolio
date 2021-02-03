@@ -57,9 +57,13 @@ p * {
     margin-top: 10rem;
     padding-right: 15em;
   }
-  [name="about_me-page"], [name="my_work-page"],
+  [name="about_me-page"],
   [name="contact_me-page"] {
-    padding-right: 15em;
+    padding-right: 5em;
+  }
+
+  div[name="my_work-page"] div div:hover {
+    cursor: pointer;
   }
 
   /* NAVBAR STUFF */
@@ -104,14 +108,18 @@ p * {
   [name="main-page"] {
     color: var(--light);
   }
-  [name="about_me-page"] [name="my_work-page"],
+  [name="about_me-page"], [name="my_work-page"],
   [name="contact_me-page"] {
     color: var(--light);
   }
 
+  div[name="my_work-page"] div div:hover {
+    cursor: pointer;
+  }
+
   /* NAVBAR STYLING */
   nav {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     padding: 0 1rem !important;
   }
   nav button {
@@ -147,16 +155,26 @@ p * {
   /* MAIN CONTENT */
   [name="main-page"] {
     color: var(--light);
-    padding: 0 1rem;
+    padding: 2rem 1rem;
   }
-  [name="about_me-page"] [name="my_work-page"],
+  [name="about_me-page"], [name="my_work-page"],
   [name="contact_me-page"] {
     color: var(--light);
-    padding: 0 1rem;
+    padding: 2rem 1rem;
   }
+
+   div[name="my_work-page"] i.fas {
+    text-align-last: justify;
+    float: right;
+    position: relative;
+    bottom: 2.5em;
+    left: .4em;
+    transform: rotate(-45deg);
+    color: var(--secondary);
+  }
+
   /* NAVBAR STYLING */
   nav {
-    margin-bottom: 5rem;
     padding: 0 1rem !important;
   }
   nav ul {
@@ -243,6 +261,10 @@ button:focus {
   outline: none;
 }
 
+.btn-primary {
+  background-color: var(--primary) !important;
+}
+
 /* Font selectors */
 .rubik {
   font-family: "Rubik Mono One", sans-serif;
@@ -254,11 +276,15 @@ button:focus {
 }
 
 .txt-light {
-  color: var(--light);
+  color: var(--light) !important;
 }
 
 .txt-primary {
-  color: var(--primary);
+  color: var(--primary) !important;
+}
+
+.txt-dark {
+  color: var(--dark) !important;
 }
 
 .txt-shadow {
@@ -266,6 +292,10 @@ button:focus {
 }
 
 /* Classes */
+
+.card {
+  background-color: var(--grey);
+}
 
 /* all ID's */
 
