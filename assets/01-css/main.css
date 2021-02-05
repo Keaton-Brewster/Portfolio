@@ -42,6 +42,9 @@ p * {
 .bg-light {
   background-color: var(--light) !important;
 }
+.bg-grey {
+  background-color: var(--grey) !important;
+}
 
 /* FOR LARGE AND XL SCREENS */
 @media screen and (min-width: 992px) {
@@ -64,6 +67,15 @@ p * {
 
   div[name="my_work-page"] div div:hover {
     cursor: pointer;
+  }
+
+  #socials {
+    height: 100%;
+    border: none;
+  }
+
+  #socials a {
+    color: var(--primary);
   }
 
   /* NAVBAR STUFF */
@@ -115,6 +127,18 @@ p * {
 
   div[name="my_work-page"] div div:hover {
     cursor: pointer;
+  }
+
+   #socials {
+    position: absolute;
+    /* height: 100%; */
+    border: none;
+    right: 2rem;
+    top: 6rem;
+  }
+  #socials a {
+    color: var(--primary);
+    margin: 30% 0;
   }
 
   /* NAVBAR STYLING */
@@ -171,6 +195,19 @@ p * {
     left: .4em;
     transform: rotate(-45deg);
     color: var(--secondary);
+  }
+
+   #socials {
+    position: absolute;
+    right: 5rem;
+    height: 60px;
+    border: none;
+  }
+  #socials a {
+    font-size: 20pt;
+    color: var(--grey);
+    margin-right: 10px;
+    margin-top: .5rem;
   }
 
   /* NAVBAR STYLING */

@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     for (let i = 0; i < pages.length; i++) {
       if (!pages[i].hasClass("hide")) {
-        pages[i].addClass("hide");
+        pages[i].fadeOut(0).addClass("hide");
       }
     }
     $(".menu-btn").removeClass("close");
