@@ -12,11 +12,6 @@ $(document).ready(function () {
   $("body").on("click", "button", function (event) {
     event.preventDefault();
 
-    //NEED TO WRITE IN A CSS QUERY TO CHANGE CLASSES AND SHIT SO THAT OTHER SCRIPT STILL WORKS
-    // WHEN THE PAGE IS RESPONSIVELY CHANGED.
-
-    // MAYBE NOT, IT LOOKS LIKE I JUST NEEDED TO USE .hasClass()
-
     // start by setting up the function that changes 'pages' (everything will still be built on one page, because I like that more.)
     targetName = "[name='" + $(this).attr("name") + "-page']";
 
