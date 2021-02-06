@@ -5,9 +5,6 @@ $(document).ready(function () {
     contactPage = $("[name='contact_me-page']"),
     pages = [mainPage, aboutMePage, myWorkPage, contactPage];
 
-  const PDFDocument = require("pdfkit");
-  let doc = new PDFDocument();
-
   let showMenu = false;
 
   $("body").fadeIn(3000).removeClass("hide");
