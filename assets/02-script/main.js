@@ -35,13 +35,7 @@ $(document).ready(function () {
     $(targetName).fadeIn(1500).removeClass("hide");
   });
 
-  $("[name='my_work-page']").on("click", ".card",function (event) {
-    event.preventDefault();
-    console.log($(this))
-    if ($(this).attr("href") != undefined) {
-      window.open($(this).attr("href"), "_blank");
-    }
-  });
+ 
 
   // NEED TO CHANGE THIS AROUND A LITTLE BIT. THE CSS AND HTML SEEM GOOD, BUT ON PAGE LOAD, IT DOES NOT QUITE WORK RIGHT.
 
