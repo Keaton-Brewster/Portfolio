@@ -1,9 +1,12 @@
 $(document).ready(function () {
   const mainPage = $("[name='main-page']"), //THINK ABOUT CHANGING THESE FROM ID'S TO NAMES SO THAT MULTIPLE CAN BE SELECTED, FOR MEDIA QUERI
-    aboutmePage = $("[name='about_me-page']"),
-    myworkPage = $("[name='my_work-page']"),
+    aboutMePage = $("[name='about_me-page']"),
+    myWorkPage = $("[name='my_work-page']"),
     contactPage = $("[name='contact_me-page']"),
-    pages = [mainPage, aboutmePage, myworkPage, contactPage];
+    pages = [mainPage, aboutMePage, myWorkPage, contactPage];
+
+  const PDFDocument = require("pdfkit");
+  let doc = new PDFDocument();
 
   let showMenu = false;
 
@@ -34,8 +37,6 @@ $(document).ready(function () {
     showMenu = false;
     $(targetName).fadeIn(1500).removeClass("hide");
   });
-
- 
 
   // NEED TO CHANGE THIS AROUND A LITTLE BIT. THE CSS AND HTML SEEM GOOD, BUT ON PAGE LOAD, IT DOES NOT QUITE WORK RIGHT.
 
