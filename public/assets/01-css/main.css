@@ -332,7 +332,19 @@ button:focus {
 .card {
   background-color: var(--grey);
 }
+.inquire-form {
 
+}
+.contact_input {
+  border-radius: 0;
+  background-color: var(--grey);
+  border-style: none;
+  resize: none;
+}
+.contact_input:focus {
+  outline-width: 0;
+  background-color: var(--grey);
+}
 /* all ID's */
 
 /* hide, for dynamics */

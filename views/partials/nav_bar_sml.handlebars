@@ -15,16 +15,28 @@
 
             </div>
             <div class="dropdown-menu text-center bg-secondary" aria-labelledby="navbarDropdown">
-                <button class="main nav-btn hvr-shutter-in-horizontal rubik">MAIN</button>
-
-                <button class="about_me nav-btn hvr-shutter-in-horizontal rubik">ABOUT</button>
-
-                <button class="my_work nav-btn hvr-shutter-in-horizontal rubik">MY WORK</button>
-
-                <button class="contact_me nav-btn hvr-shutter-in-horizontal rubik">CONTACT</button>
+                <form action="/home">
+                    <button type="submit" class="main nav-btn hvr-shutter-in-horizontal rubik">MAIN</button>
+                </form>
+                <form action="/about">
+                    <button type="submit" class="about_me nav-btn hvr-shutter-in-horizontal rubik">ABOUT</button>
+                </form>
+                <form action="/my_work">
+                    <button type="submit" class="my_work nav-btn hvr-shutter-in-horizontal rubik">MY WORK</button>
+                </form>
+                <form action="/contact">
+                    <button type="submit" class="contact_me nav-btn hvr-shutter-in-horizontal rubik">CONTACT</button>
+                </form>
             </div>
 
         </li>
     </ul>
 
 </nav>
+
+<footer id="socials" class="fixed-bottom bg-secondary flex-row text-center justify-content-around">
+    <a href="https://www.linkedin.com/in/keatonbrewster/" class="hvr-pulse" target="blank"><i
+            class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/Keaton-Brewster" class="hvr-pulse" target="blank"><i class="fab fa-github"></i></a>
+    <a href="https://twitter.com/KeatonBrewster" class="hvr-pulse" target="blank"><i class="fab fa-twitter"></i></a>
+</footer>
