@@ -114,6 +114,10 @@ p * {
     right: 10px;
   }
 
+  aside {
+    max-height: 100px;
+  }
+
   /* END LARGER QUERY */
 }
 
@@ -196,7 +200,7 @@ p * {
     margin-top: 1rem;
   }
 
-   #socials {
+  #socials {
     height: 60px;
     border: none;
   }
@@ -300,7 +304,6 @@ button:focus {
 .btn-primary {
   background-color: var(--primary) !important;
 }
-
 /* Font selectors */
 .rubik {
   font-family: "Rubik Mono One", sans-serif;

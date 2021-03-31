@@ -21,6 +21,6 @@ module.exports = (app) => {
     })
 
     app.get('/my_work', (request, response) => {
-        response.end();
+        response.render('my_work', {keaton: keaton})
     })
 }
