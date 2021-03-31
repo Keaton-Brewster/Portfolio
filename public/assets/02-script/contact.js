@@ -6,8 +6,7 @@ $(document).ready(() => {
     }
 
     const sendMail = (message) => {
-        if (typeof (message.text) === 'string' &&
-            typeof (message.subject) === 'string') {
+        if (typeof (message.text) === 'string') {
             $.post('/api/contact', message)
                 .then(() => {
                     thankYou();

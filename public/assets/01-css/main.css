@@ -335,9 +335,15 @@ button:focus {
 .card {
   background-color: var(--grey);
 }
-.inquire-form {
 
+input, textarea {
+  color: var(--light);
 }
+
+textarea:focus, input:focus {
+  color: var(--light);
+}
+
 .contact_input {
   border-radius: 0;
   background-color: var(--grey);
