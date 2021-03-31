@@ -1,9 +1,13 @@
 const express = require('express');
 // const session = require('express-session');
 const exphbs = require('express-handlebars');
+const keaton = require('./config/keaton.json');
+
 
 // const passport = require('./config/passport.js');
 const PORT = process.env.PORT || 1717;
+process.env.USER = keaton.throw_email;
+process.env.PASS = keaton.throw_pass;
 // const db = require('./models');
 
 const app = express();

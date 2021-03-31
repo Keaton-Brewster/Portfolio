@@ -33,6 +33,9 @@ p * {
 .bg-primary {
   background-color: var(--primary) !important;
 }
+.bg-primary_light {
+  background-color: var(--primary_light) !important;
+}
 .bg-secondary {
   background-color: var(--secondary) !important;
 }
