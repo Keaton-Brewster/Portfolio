@@ -337,11 +337,11 @@ button:focus {
 }
 
 input, textarea {
-  color: var(--light);
+  color: var(--light) !important;
 }
 
 textarea:focus, input:focus {
-  color: var(--light);
+  color: var(--light) !important;
 }
 
 .contact_input {
