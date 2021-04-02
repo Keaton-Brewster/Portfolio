@@ -1,16 +1,15 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
+const Mailer = require('../config/keaton');
 
-const transport = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: process.env.USER,
-        pass: process.env.PASS
-    }
-})
+Mailer._goLive();
+
+const transport = nodemailer.createTransport(Mailer._configureMailer());
 
 module.exports = (app) => {
     app.post('/api/contact', (request, response) => {
+        console.log(process.env.USER, process.env.PASS);
+
         transport.verify((err, succ) => {
             if (err) return console.log(err)
             else console.log(succ);

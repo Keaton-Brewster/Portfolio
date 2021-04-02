@@ -1,13 +1,11 @@
 const express = require('express');
 // const session = require('express-session');
 const exphbs = require('express-handlebars');
-const keaton = require('./config/keaton.json');
+const Keaton = require('./config/keaton');
 
 
 // const passport = require('./config/passport.js');
-const PORT = process.env.PORT || 1717;
-process.env.USER = keaton.throw_email;
-process.env.PASS = keaton.throw_pass;
+const PORT = process.env.PORT || 8080;
 // const db = require('./models');
 
 const app = express();
@@ -39,6 +37,7 @@ require('./controllers/html_troller')(app);
 // db.sequelize.sync({force: true}).then(() => {
 try {
     app.listen(PORT, () => {
+        Keaton._goLive()
         console.log(`Listening on port ${PORT}.`);
     });
 } catch (err) {
