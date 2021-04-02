@@ -3,7 +3,6 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const Keaton = require('./config/keaton');
 
-
 // const passport = require('./config/passport.js');
 const PORT = process.env.PORT || 8080;
 // const db = require('./models');

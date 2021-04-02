@@ -22,6 +22,6 @@ module.exports = (app) => {
     })
 
     app.get('/my_work', (request, response) => {
-        response.render('my_work', {keaton: Keaton})
+        response.render('my_work', require('../works')());
     })
 }
