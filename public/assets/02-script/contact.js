@@ -17,9 +17,10 @@ $(document).ready(() => {
             return;
         }
     }
-    $('form[name=inquireLG]').on('submit', () => {
+    $('form[name=inquireLG]').on('submit', (e) => {
+        e.preventDefault();
         const message = {
-            from: 'throwawaykeatondev@gmail.com',
+            from: 'dGhyb3dhd2F5a2VhdG9uZGV2QGdtYWlsLmNvbQ==',
             to: 'keatonbrewsterdev@gmail.com',
             subject: $('input[name=inquireLG_subject]').val(),
             text: `FROM: ${$('#inquireLG_email').val()}\n${$('textarea[name=inquireLG_text]').val()}`
@@ -28,9 +29,10 @@ $(document).ready(() => {
         sendMail(message);
     })
 
-    $('form[name=inquireMD]').on('submit', () => {
+    $('form[name=inquireMD]').on('submit', (e) => {
+        e.preventDefault();
         const message = {
-            from: 'throwawaykeatondev@gmail.com',
+            from: 'dGhyb3dhd2F5a2VhdG9uZGV2QGdtYWlsLmNvbQ==',
             to: 'keatonbrewsterdev@gmail.com',
             subject: $('input[name=inquireMD_subject]').val(),
             text: `${$('#inquireMD_email').val()}\n${$('textarea[name=inquireMD_text]').val()}`
@@ -39,9 +41,10 @@ $(document).ready(() => {
         sendMail(message);
     })
 
-    $('form[name=inquireSM]').on('submit', () => {
+    $('form[name=inquireSM]').on('submit', (e) => {
+        e.preventDefault();
         const message = {
-            from: 'throwawaykeatondev@gmail.com',
+            from: 'dGhyb3dhd2F5a2VhdG9uZGV2QGdtYWlsLmNvbQ==',
             to: 'keatonbrewsterdev@gmail.com',
             subject: $('input[name=inquireSM_subject]').val(),
             text: `${$('#inquireSM_email').val()}\n${$('textarea[name=inquireSM_text]').val()}`
