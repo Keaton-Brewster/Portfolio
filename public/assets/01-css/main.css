@@ -150,7 +150,6 @@ p * {
 
   /* NAVBAR STYLING */
   nav {
-    margin-bottom: 2rem;
     padding: 0 1rem !important;
   }
   nav button {
@@ -342,11 +341,16 @@ button:focus {
   cursor: none;
 }
 
-div .workCard {
+div.workCard {
   max-width: 35rem;
   margin-left: 10rem;
   margin-top: 2rem;
   margin-bottom: 8rem;
+  z-index: 100;
+}
+div.workCardSM {
+  margin: 5rem;
+  z-index: 100;
 }
 
 .card {
@@ -371,9 +375,69 @@ textarea:focus, input:focus {
   outline-width: 0;
   background-color: var(--grey);
 }
+
+/* Yellow bar thing */
+.yellow_bar {
+  display: block;
+  color: var(--secondary);
+  background: var(--secondary);
+  height: 5rem;
+  box-sizing: border-box;
+  position: relative;
+  transform: translate(5rem, 8rem);
+}
+.yellow_bar2 {
+  display: block;
+  color: var(--secondary);
+  background: var(--secondary);
+  height: 5rem;
+  box-sizing: border-box;
+  position: relative;
+  transform: rotate(45deg) translate(5rem, 14.5rem);
+}
+.yellow_bar3 {
+  display: block;
+  color: var(--secondary);
+  background: var(--secondary);
+  height: 5rem;
+  box-sizing: border-box;
+  position: relative;
+  transform: rotate(45deg) translate(-3rem, -5rem);
+}
+
 /* all ID's */
 
 /* hide, for dynamics */
 .hide {
   display: none !important;
 }
+
+/*! Side scrolling stuff */
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+}
+.scrolling-wrapper.card {
+  display: inline-block;
+}
+
+/* div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+} */
