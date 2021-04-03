@@ -24,6 +24,7 @@ module.exports = () => {
             projects.push(project);
         });
     return {
-        projects: projects
+        projects: projects,
+        page: 'MY WORK'
     }
 }

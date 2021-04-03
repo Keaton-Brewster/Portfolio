@@ -7,17 +7,22 @@ module.exports = (app) => {
     // })
 
     app.get('/', (request, response) => {
-        response.render('home', {});
+        response.render('home', {
+            page: 'MAIN'
+        });
     })
 
     app.get('/contact', (request, response) => {
         Keaton._goLive();
-        response.render('contact', {});
+        response.render('contact', {
+            page: 'CONTACT'
+        });
     })
 
     app.get('/about', (request, response) => {
         response.render('about', {
-            keaton: Keaton
+            keaton: Keaton,
+            page: 'ABOUT'
         });
     })
 
