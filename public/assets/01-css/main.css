@@ -423,21 +423,3 @@ textarea:focus, input:focus {
 .scrolling-wrapper.card {
   display: inline-block;
 }
-
-/* div.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-
-}
-
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-  background-color: #777;
-} */
